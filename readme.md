@@ -21,6 +21,21 @@ console.log(18 + "20")
 
 O que sera impresso no console será: 1820 novamente e porque? O JS vai pegar o primeiro tipo e tentar converter o segundo em string também, assim fazendo a concatenação dos dois. O mesmo vale para a segunda forma de escrita.
 
+Porém devemos ter cuidado ao fazer o seguinte:
+
+console.log ('A soma das idade é '+ 20 + 10 + 30);
+
+O que esperamos é que ele some as idades porém isso não vai acontecer, o seguinte ira ocorrer.
+
+console.log ('A soma das idade é '+ 20 + 10 + 30);
+             'A soma das idade é 20'
+             'A soma das idade é 2010'
+             'A soma das idade é 201030'
+
+Ele vai concatenando a operação e não somando!
+
+Essa mesma explicação está na parte de operação matematica, achei justo deixar como referencia nos dois topicos!
+
 ## Instrução Alert
 
 1- Vou colocar um esquema de alert só para ter o nome das coisas:
@@ -41,3 +56,17 @@ Para saber a média da idade de três pessoas, porém ao rodar, o resultado sera
 document.write((20 + 10 + 30) /3);
 
 Colocando um parenteses na conta, igual matematica. Agora sim o resultado será 20.
+
+Porém devemos ter cuidado ao fazer o seguinte:
+
+console.log ('A soma das idade é '+ 20 + 10 + 30);
+
+O que esperamos é que ele some as idades porém isso não vai acontecer, o seguinte ira ocorrer.
+
+console.log ('A soma das idade é '+ 20 + 10 + 30);
+             'A soma das idade é 20'
+             'A soma das idade é 2010'
+             'A soma das idade é 201030'
+
+Ele vai concatenando a operação e não somando!
+
