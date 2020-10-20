@@ -1,1 +1,2 @@
-First commit
+## Inicio dos estudos sobre JS
+
