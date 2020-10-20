@@ -34,7 +34,7 @@ console.log ('A soma das idade é '+ 20 + 10 + 30);
 
 Ele vai concatenando a operação e não somando!
 
-Essa mesma explicação está na parte de operação matematica, achei justo deixar como referencia nos dois topicos!
+Essa mesma explicação está na parte de operação matematica junto com sua solução, que nada mais que colocar parenteses, achei justo deixar como referencia nos dois topicos!
 
 ## Instrução Alert
 
@@ -69,4 +69,28 @@ console.log ('A soma das idade é '+ 20 + 10 + 30);
              'A soma das idade é 201030'
 
 Ele vai concatenando a operação e não somando!
+
+E como resolvemos isso? HORA! colocando os parenteses que acabamos de ver :)
+
+console.log ('A soma das idade é '+ (20 + 10 + 30));
+
+
+## Exercicio:
+
+1- Matematica:
+
+A) Rafaela, aspirante à carreira de programadora, criou um pequeno programa para saber qual é sua porcentagem de acertos em uma prova de 50 questões de múltipla escolha. O cálculo matemático comporta dividir a quantidade de acertos pelo total de questões e multiplicar o resultado final por 100.
+
+<meta charset="UTF-8">
+<script>
+    document.write("Eu acertei: ");
+</script>
+Rafaela acertou 15 questões.
+
+Agora:
+
+    document.write("Eu acertei: " + (15/50*100) + ("%"));
+
+Saida: Eu acertei: 30%
+
 
