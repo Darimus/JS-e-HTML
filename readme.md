@@ -14,3 +14,10 @@ console.log("18" + "20")
 
 Ao imprimir este console.log não ira acontecer uma soma de dois números, pois tudo que está entre "" é considerado texto para o JS, então ele ira concatenar os dois dados e assim surgindo um novo dado que tera como resultado 1820 e não 38. Temos que ficar atentos a esse tipo de "pegadinha" no JS.
 
+Porém podemos nos perguntar e se tentarmos concatenar uma string com um número? Exemplo:
+
+console.log("18" + 20)
+console.log(18 + "20")
+
+O que sera impresso no console será: 1820 novamente e porque? O JS vai pegar o primeiro tipo e tentar converter o segundo em string também, assim fazendo a concatenação dos dois. O mesmo vale para a segunda forma de escrita.
+
