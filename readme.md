@@ -21,3 +21,23 @@ console.log(18 + "20")
 
 O que sera impresso no console será: 1820 novamente e porque? O JS vai pegar o primeiro tipo e tentar converter o segundo em string também, assim fazendo a concatenação dos dois. O mesmo vale para a segunda forma de escrita.
 
+## Instrução Alert
+
+1- Vou colocar um esquema de alert só para ter o nome das coisas:
+
+alert("Texto aqui!!!!");
+
+alert = Instrução
+"Texto aqui!!!!" = Parametro
+
+## Operação matematica
+
+1- Assim como na matematica temos que ficar atentos a resolução do problema o JS resolve primeiro as multiplicações e divisões (* /). Exemplo:
+
+document.write(20 + 10 + 30/3);
+
+Para saber a média da idade de três pessoas, porém ao rodar, o resultado sera 40 e não 20 como o esperado. E por qual motivo? 30/3 = 10 e logo em seguida ele resolve o resto 20 + 10 + 10 e sendo assim 40. E como resolvemos isso?
+
+document.write((20 + 10 + 30) /3);
+
+Colocando um parenteses na conta, igual matematica. Agora sim o resultado será 20.
