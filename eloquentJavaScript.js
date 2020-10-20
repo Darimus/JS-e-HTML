@@ -5,6 +5,7 @@ let tri = "#";
 
 while (cont <= 6) {
     console.log(tri)
+    document.write(tri + "<br>")
     tri = tri + "#"
     cont++
 };
