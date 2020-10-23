@@ -75,7 +75,7 @@ E como resolvemos isso? HORA! colocando os parenteses que acabamos de ver :)
 console.log ('A soma das idade é '+ (20 + 10 + 30));
 
 
-## Exercicio:
+## Exercicios da Alura:
 
 1- Matematica:
 

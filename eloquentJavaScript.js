@@ -49,18 +49,41 @@ while (cont1 <= 100) {
   } */
 
 //----------------------------------------------------------------
-let output = '';
 
-for (size = 1, column = 1; size <= 8; size++, column++) {
+//Fazer um tabuleiro de xadrez de 8x8
+
+/* let output = ''; MINHA QUASE SOLUÇÃO
+
+for (size = 1, column = 1; size <= 8;) {
     
-    if (size <= column) {
+    while (size <= 8){
         output += ' #'
-   
-    } else if (output.length == 8) {
-        console.log(output)
-   
-    } else if (column > 8){
-        break;
-    } 
-    
+        size++
+
+        while (output.length == 8){
+            console.log(output)
+            column++
+
+            if (column == 8){
+                break;
+            }
+        }
+    }
+} */
+
+let size = 8;
+
+let board = "";
+
+for (let y = 0; y < size; y++) {
+  for (let x = 0; x < size; x++) {
+    if ((x + y) % 2 == 0) {
+      board += " ";
+    } else {
+      board += "#";
+    }
+  }
+  board += "\n";
 }
+
+console.log(board);
