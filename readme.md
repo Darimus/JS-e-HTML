@@ -104,6 +104,30 @@ Simples não? Devemos apenas chamar o nome da função e não esquecermos de col
 
 E não devemos esquecer da convenção de identar o código, ou seja tudo que está dentro de um bloco deve ter um tab, para criar um recuo para melhor leitura do mesmo.
 
+Agora vamos aprender a criar uma function com parametro:
+
+function mostra(conteudo) {
+    document.write(conteudo);
+}
+
+mostra("Olar")
+
+O parametro conteudo é como se fosse uma variavel, e tudo que colocamos dentro do parametro ele armazena dentro da variavel e depois passa o valor para dentro do bloco.
+
+Por debaixo dos panos é assim:
+conteudo = "Olar";
+
+Depois ele executa o document.wiret("Olar").
+
+Uma function pode ter uma instrução de chamada outra function. Exemplo:
+
+function mostra(conteudo) {
+    document.write(conteudo);
+    pulaLinha();
+}
+
+Agora toda vez que chamamos o mostra("Hello"), automaticamente pula a linha já.
+
 ## Exercicios da Alura:
 
 1- Matematica:
