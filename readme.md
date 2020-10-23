@@ -102,6 +102,8 @@ pulaLinha()
 
 Simples não? Devemos apenas chamar o nome da função e não esquecermos de colocar (), pois esse parenteses é a execução da function, é como se tivessemos ligando ela.
 
+E não devemos esquecer da convenção de identar o código, ou seja tudo que está dentro de um bloco deve ter um tab, para criar um recuo para melhor leitura do mesmo.
+
 ## Exercicios da Alura:
 
 1- Matematica:
