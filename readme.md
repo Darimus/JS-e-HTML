@@ -74,6 +74,33 @@ E como resolvemos isso? HORA! colocando os parenteses que acabamos de ver :)
 
 console.log ('A soma das idade é '+ (20 + 10 + 30));
 
+## Criando Funções:
+
+1- Podemos criar nossas proprias funções dentro do JS, o que seria uma função? Algum bloco de comando que realize instruções que nos programamos.
+
+2- Um exemplo de função é o Alert(), ele abre uma janela popup na tela, isso sem precisarmos escrever uma lógica para tal função.
+
+3- Como criar:
+
+function nomeDaFuncao () {
+    Instruções da lógica
+}
+
+Obs: Nome de função sempre em Verbo, pois ela é uma ação.
+
+Vamos criar uma function básica de pular linha:
+
+function pulaLinha() {
+
+    document.write("<br>")
+
+}
+
+E como usamos essa função no nosso programa? Devemos chamar ela:
+
+pulaLinha() 
+
+Simples não? Devemos apenas chamar o nome da função e não esquecermos de colocar (), pois esse parenteses é a execução da function, é como se tivessemos ligando ela.
 
 ## Exercicios da Alura:
 
