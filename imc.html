@@ -11,7 +11,7 @@
 
     function pulaLinha() {
 
-        document.write("<br>");
+        document.write("<br><hr>");
     }
 
     function mostra (frase) {
@@ -27,6 +27,8 @@
         let pesoBruno = peso;
         let imcTotal = pesoBruno / (alturaBruno * alturaBruno);
 
+        
+
         mostra('Seu imc é: '+ Math.round(imcTotal));
         
         if (imcTotal < 18.5){
@@ -41,14 +43,16 @@
         else if (imcTotal > 24.9 && imcTotal < 29.9) {
             mostra('Você está na classificação de SOBREPESO')
         }
+        
+        return imcTotal;
     }
 
-    imc(1.64, 45);
+    let imc1 = imc(1.64, 45);
+    let imc2 = imc(1.70, 75);
 
+    let imcGeral = mostra("A soma dos Imc's: " + Math.round(imc1 + imc2));
 
-    
 
 </script>
-
 </body>
 </html>

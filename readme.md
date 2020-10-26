@@ -128,6 +128,30 @@ function mostra(conteudo) {
 
 Agora toda vez que chamamos o mostra("Hello"), automaticamente pula a linha já.
 
+Podemos passar parametros para as funções e como fazemos isto? Iremos criar uma function básica de calcular IMC:
+
+function imc (peso, altura) {
+    let totalPeso = peso;
+    let totalAltura = altura;
+
+    let totalImc = totalPeso / (totalAltura * totalAltura);
+
+    return totalImc;
+}
+
+imc (45, 1.64); O 45 é peso e 1.64 é altura, que passamos como parametro na function do imc
+imc (70, 1.94);
+imc (80, 1.74);
+
+Ou seja, podemos passar os parametros quando chamamos a function e assim, não precisamos criar um monte de variaveis para cada vez que iremos calcular um Imc diferente.
+
+Podemos também adicionar um return para function e assim, ele ira retornar para nós o calculo ou dado que a função deveria fazer. Podendo assim somar os dois Imc's. Fazendo uma variavel para receber os valores de imc e depois somando eles.
+
+let imc1 = imc (70, 1.94);
+let imc2 = imc (40, 1.20);
+
+let imcGeral = imc1 + imc2;
+
 ## Exercicios da Alura:
 
 1- Matematica:
