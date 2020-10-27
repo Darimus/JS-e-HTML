@@ -180,7 +180,7 @@ Ex:
 
 Podemos usar desta forma o parseInt();
 
-## Operação lógica: If
+## Operação lógica: If e Else
 
 1- Temos uma operação lógica que pode deixar nosso programa mais inteligente e elegante. O operador if (se em portugues) nos permite trabalhar com algumas condições e caso elas sejam verdadeiras executa algum bloco de código.
 
@@ -205,6 +205,22 @@ if (pontos == 10) {
 }
 
 Podemos combinar varios operadores juntos, porem iremos ver isso mais para frente.
+
+Podemos usar o else para quando o if não for true!
+Ex:
+
+let numeroPensado = Math.round(Math.random() * 10);
+
+    let numeroDigitado = parseInt(prompt('Chute um número: '));
+
+    if (numeroDigitado == numeroPensado){
+        mostra('Parabens você acertou!')
+    } else {
+        mostra('Você errou, o número pensado foi: ' + numeroPensado);
+    }
+
+Quando a condição de if foi false automaticamente ele entra no bloco do else e executa os comandos dentro dele.
+
 ## Exercicios da Alura:
 
 1- Matematica:

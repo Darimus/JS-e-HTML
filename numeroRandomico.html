@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numero Randomico</title>
+</head>
+<body>
+    
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br><hr>");
+    }
+
+    function mostra (frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    let numeroPensado = Math.round(Math.random() * 10);
+
+    let numeroDigitado = parseInt(prompt('Chute um número: '));
+
+    if (numeroDigitado == numeroPensado){
+        mostra('Parabens você acertou!')
+    } else {
+        mostra('Você errou, o número pensado foi: ' + numeroPensado);
+    }
+
+</script>
+
+</body>
+</html>
