@@ -173,7 +173,13 @@ imc();
 
 Ao chamar a function agora, ele abrira uma caixa para digitar os dados e armazenar na variavel correspondente.
 
-4- 
+4- Para transformar string em number, usaremos a função propria do JS, chamda parseInt();
+Ex:
+    let vitorias = parseInt(prompt('Infome o número de vitorias.'));
+    let empates = parseInt(prompt('Informe o número de empates.'));
+
+Podemos usar desta forma o parseInt();
+
 
 ## Exercicios da Alura:
 
