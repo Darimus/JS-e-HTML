@@ -26,6 +26,17 @@
 
     let pontos = empates + (vitorias * 3);
 
+    if (pontos < 28){
+
+        mostra('Seu time está pior que o ano passado');
+    } if ( pontos > 28) {
+
+        mostra('Seu time está melhor que o ano passado');
+    } if (pontos == 28) { 
+
+         mostra('Seu time está igual ao ano passado!');
+    }
+
     mostra(pontos);
 
 </script>

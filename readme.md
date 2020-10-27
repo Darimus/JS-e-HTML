@@ -180,7 +180,31 @@ Ex:
 
 Podemos usar desta forma o parseInt();
 
+## Operação lógica: If
 
+1- Temos uma operação lógica que pode deixar nosso programa mais inteligente e elegante. O operador if (se em portugues) nos permite trabalhar com algumas condições e caso elas sejam verdadeiras executa algum bloco de código.
+
+Ex:
+
+if (condição para entrar no bloco de código){
+    bloco de código aqui dentro
+}
+
+let pontos = 10; (passei um numero fixo)
+
+if (pontos < 10){
+    mostra('Pontos é menor do que 10');
+}
+
+if (pontos > 10) {
+    mostra('Pontos maior do que 10');
+}
+
+if (pontos == 10) {
+    mostra('Pontos igual a 10');
+}
+
+Podemos combinar varios operadores juntos, porem iremos ver isso mais para frente.
 ## Exercicios da Alura:
 
 1- Matematica:
