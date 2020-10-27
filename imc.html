@@ -23,11 +23,9 @@
 
     function imc(altura, peso) {
 
-        let alturaBruno = altura;
-        let pesoBruno = peso;
+        let alturaBruno = prompt('Informe sua altura: ' + altura);
+        let pesoBruno = prompt('Informe o seu peso: ' + peso);
         let imcTotal = pesoBruno / (alturaBruno * alturaBruno);
-
-        
 
         mostra('Seu imc é: '+ Math.round(imcTotal));
         
@@ -43,15 +41,10 @@
         else if (imcTotal > 24.9 && imcTotal < 29.9) {
             mostra('Você está na classificação de SOBREPESO')
         }
-        
-        return imcTotal;
+
     }
-
-    let imc1 = imc(1.64, 45);
-    let imc2 = imc(1.70, 75);
-
-    let imcGeral = mostra("A soma dos Imc's: " + Math.round(imc1 + imc2));
-
+    
+    imc();
 
 </script>
 </body>

@@ -152,6 +152,26 @@ let imc2 = imc (40, 1.20);
 
 let imcGeral = imc1 + imc2;
 
+## Prompt - Capturando infomação do usuario
+
+1- Podemos capturar informação digitada pelo usuario de maneira muito simples, com uma caixa de dialogo (estilo popup).
+
+2- Podemos inclusive aproveitar nossa function de IMC para exemplificar o uso de prompt:
+
+function imc (peso, altura) {
+    let totalPeso = prompt('Infome seu peso' + peso);
+    let totalAltura = prompt('Informe sua altura' + altura);
+
+    let totalImc = totalPeso / (totalAltura * totalAltura);
+
+    return totalImc;
+}
+
+imc();
+
+Ao chamar a function agora, ele abrira uma caixa para digitar os dados e armazenar na variavel correspondente.
+
+
 ## Exercicios da Alura:
 
 1- Matematica:
