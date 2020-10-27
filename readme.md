@@ -154,9 +154,11 @@ let imcGeral = imc1 + imc2;
 
 ## Prompt - Capturando infomação do usuario
 
-1- Podemos capturar informação digitada pelo usuario de maneira muito simples, com uma caixa de dialogo (estilo popup).
+1- Podemos capturar informação digitada pelo usuario de maneira muito simples, com uma function própria do JS, ao qual abre uma caixa de dialogo (estilo popup).
 
-2- Podemos inclusive aproveitar nossa function de IMC para exemplificar o uso de prompt:
+2- Temos uma grande informação sobre o prompt, tudo que é digitado e capturado por ele é considerado como tipo string! Porém vamos ver como converter tipo string parar number.
+
+3- Podemos inclusive aproveitar nossa function de IMC para exemplificar o uso de prompt:
 
 function imc (peso, altura) {
     let totalPeso = prompt('Infome seu peso' + peso);
@@ -171,6 +173,7 @@ imc();
 
 Ao chamar a function agora, ele abrira uma caixa para digitar os dados e armazenar na variavel correspondente.
 
+4- 
 
 ## Exercicios da Alura:
 
