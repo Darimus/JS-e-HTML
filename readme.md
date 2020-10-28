@@ -221,6 +221,33 @@ let numeroPensado = Math.round(Math.random() * 10);
 
 Quando a condição de if foi false automaticamente ele entra no bloco do else e executa os comandos dentro dele.
 
+## Operador lógico: Repetir enquanto (While):
+
+1- Temos um operador bem interessante de repetição que pode nos poupar muitas linhas de códigos.
+
+2- A estrutra do while é a seguinte:
+
+while (condição para ele se repetir) {
+    bloco para instrução quando o while for TRUE;
+}
+
+3- Um exemplo bem básico para melhor entendimento, ele vai printar na tela todos os anos da copa de 1930 até 2020:
+
+    while (anoCopa < 2020) {
+            anoCopa += 4;
+            mostra('Copa de: ' + anoCopa);
+        }
+
+
+Podemos inclusive combinar com o parseInt e prompt, assim o úsuario conseguiria colocar até que ano ele gostaria de ver.
+
+    let limite = parseInt(prompt('Até que ano você gostaria de ver?'))
+
+    while (anoCopa <= limite) {
+            anoCopa += 4;
+            mostra('Copa de: ' + anoCopa);
+        }
+
 ## Exercicios da Alura:
 
 1- Matematica:

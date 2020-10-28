@@ -21,10 +21,22 @@
     }
 
     let anoCopa = 1930;
+    let limite = parseInt(prompt('Até que ano gostaria de ver?'))
 
-    while (anoCopa < 2020) {
+    while (anoCopa <= limite) {
         anoCopa += 4;
         mostra('Copa de: ' + anoCopa);
+    }
+
+    let cont = 1;
+    while (cont <= 100) {
+        if (cont == 33 || cont == 37){
+            cont++
+        }
+
+        mostra(cont);
+        cont++;
+
     }
 
 </script>

@@ -22,12 +22,18 @@
 
     let numeroPensado = Math.round(Math.random() * 10);
 
-    let numeroDigitado = parseInt(prompt('Chute um número: '));
+    for (var cont = 1; cont <= 3; cont++) {
 
-    if (numeroDigitado == numeroPensado){
-        mostra('Parabens você acertou!')
-    } else {
-        mostra('Você errou, o número pensado foi: ' + numeroPensado);
+        let numeroDigitado = parseInt(prompt('Chute um número: '));
+
+        if (numeroDigitado == numeroPensado){
+            mostra('Parabens você acertou!')
+            break;
+
+        } else {
+            mostra('Você errou, o número pensado foi: ' + numeroPensado);
+        }
+
     }
 
 </script>
