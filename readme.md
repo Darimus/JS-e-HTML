@@ -284,6 +284,15 @@ button.onclick = verifica(); // ERRADO, na verdade eu não sei se usamos assim e
 
 button.onclick = verifica; //CORRETO
 
+## Sobre Array:
+
+1- Array é uma forma de guarda uma lista de valores, como assim? Se uma hora ou outra precisarmos trabalhar com uma grande quantidade de valores, seja para armazenar ou para buscar os dados, utilizamos comumente o array para isso:
+
+let NomeDoArray = [item0, item1, item2]; //Forma de declarar um array.
+
+Esse é um array com 3 itens, porém devemos ter uma atenção especial para as posições do array, ela começa sempre na posição 0 e seguindamente 1, 2, 3... ou seja o 'PRIMEIRO' item da lista de um array é sempre na posição 'ZERO'.
+
+
 ## Exercicios da Alura:
 
 1- Matematica:
