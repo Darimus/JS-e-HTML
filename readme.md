@@ -248,6 +248,36 @@ Podemos inclusive combinar com o parseInt e prompt, assim o úsuario conseguiria
             mostra('Copa de: ' + anoCopa);
         }
 
+## Evento .value:
+
+1- O .value do JS, é usado para pegar o valor da variavel, objeto ou qualquer outra coisa que você queria.
+
+2- Um exemplo de uso para ele é o seguinte, fizemos um programa básico para certar um número ao digitar no campo e fazer a comparação ao clicar no botão, tem algumas coisas básicas do mundo HTML também neste pequeno programa. input e button
+
+    let segredo = Math.round(Math.random() * 10);
+    let input = document.querySelector('input');
+
+
+    function verifica() {
+
+        if (input.value == segredo) {
+            
+            alert('Você ACERTOU!')
+        } else {
+            alert('Você ERROU!!')
+        }
+    }
+
+    let button = document.querySelector('button')
+
+    button.onclick = verifica; 
+
+Na linha do input.value estamos fazendo a verificação do valor atribuido ao input do html e comparando com o segredo gerado na variavel dentro do JS.
+
+## Evento de .onclick:
+
+1- Este evento serve para disparar alguma coisa no caso do programa do topico anterior, ele dispara a function verifica, ou seja, ao clicar no botão no mundo HTML ele dispara este evento dentro do mundo JS e assim refletindo no HTML novamente, muito usado para enviar formularios para o backend e esse tipo de verificação e atribuição.
+
 ## Exercicios da Alura:
 
 1- Matematica:
