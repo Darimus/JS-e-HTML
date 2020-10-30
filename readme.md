@@ -327,6 +327,21 @@ Esse é um array com 3 itens, porém devemos ter uma atenção especial para as 
 Estamos fazendo a varredura dentro das posicao do array e atualizando ele sempre, a condição para esse for parar é o posicao ser menor que o número de dados (.length) dentro do array segredos.
 Logo após isso, ele entra no if e faz a verificação do valor de input dentro do array segredos na posicao especificada.
 
+3- Todo array é declarado com colchetes, o famoso []. Contudo se tivermos uma declaração desta forma var coisas = []; temos um array, ou seja, uma lista vazia sem qualquer elemento.
+
+Podemos, no momento da declaração de um array, adicionar elementos. Esses elementos podem ser de qualquer tipo conhecido do JavaScript:
+
+var coisas = ["Gisele", 12, true];
+Temos como primeiro item do Array uma String, o segundo um número e o último um boleano.
+
+4- Podemos também inserir dados após declarar o array:
+
+let segredos = [];
+segredos.push(Math.round(Math.random * 10));
+segredos.push(Math.round(Math.random * 10));
+segredos.push(Math.round(Math.random * 10));
+
+E cada vez que fizermos um push ele adicionar mais um item no array.
 
 ## Exercicios da Alura:
 
