@@ -28,27 +28,33 @@
         while (numero <= quantidade) {
 
             let numeroAleatorio = sorteia();
-            let achou = false;
 
-            for (var posicao = 0; posicao < segredos.length; posicao++) {
+            if (numeroAleatorio !== 0) {
 
-                if (segredos[posicao] == numeroAleatorio) }
-                achou = true;
-                break;
-            }
+                let achou = false;
 
-            if (achou == false) {
+                for (var posicao = 0; posicao < segredos.length; posicao++) {
 
-                segredos.push(numeroAleatorio);
-                numero++
+                    if (segredos[posicao] == numeroAleatorio) {
+
+                        achou = true;
+                        break;
+                    }
+                }
+                if (achou == false) {
+
+                    segredos.push(numeroAleatorio);
+                    numero++
+                }
             }
         }
 
         return segredos;
     }
 
-    
+
     let segredos = sorteiaNumeros(3);
+    console.log(segredos);
 
     let input = document.querySelector('input');
 
