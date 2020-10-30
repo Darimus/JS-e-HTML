@@ -8,8 +8,8 @@
 <body>
     <h2>Tente adivinhar um número de 1 a 10</h2>
 
-    <input type="text" name="" id="">
-
+    <input type="text" name="" id="" autofocus style="margin-bottom: 20px;">
+    <br>
     <button>Compare com o meu segredo</button>
 
 <script>
@@ -26,6 +26,9 @@
         } else {
             alert('Você ERROU!!')
         }
+
+        input.value = '';
+        input.focus();
     }
 
     let button = document.querySelector('button')
