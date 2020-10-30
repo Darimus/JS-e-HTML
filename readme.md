@@ -292,6 +292,41 @@ let NomeDoArray = [item0, item1, item2]; //Forma de declarar um array.
 
 Esse é um array com 3 itens, porém devemos ter uma atenção especial para as posições do array, ela começa sempre na posição 0 e seguindamente 1, 2, 3... ou seja o 'PRIMEIRO' item da lista de um array é sempre na posição 'ZERO'.
 
+2- Um exemplo de como um array funciona, é o programa de acertar o número, porém com os itens estaticos:
+
+    let segredos = [1, 2, 3, 4];
+    let input = document.querySelector('input');
+
+
+    function verifica() {
+
+        let achou = false;
+
+        for (var posicao = 0; posicao < segredos.length; posicao++) {
+
+            if (input.value == segredos[posicao]) {
+                
+                alert('Você ACERTOU!')
+                achou = true;
+                break;
+            } 
+        }
+
+        if (achou == false){
+            alert('Você ERROU!!');
+        }
+
+        input.value = '';
+        input.focus();
+    }
+
+    let button = document.querySelector('button')
+
+    button.onclick = verifica; 
+
+Estamos fazendo a varredura dentro das posicao do array e atualizando ele sempre, a condição para esse for parar é o posicao ser menor que o número de dados (.length) dentro do array segredos.
+Logo após isso, ele entra no if e faz a verificação do valor de input dentro do array segredos na posicao especificada.
+
 
 ## Exercicios da Alura:
 
