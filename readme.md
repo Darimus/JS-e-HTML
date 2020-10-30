@@ -278,6 +278,12 @@ Na linha do input.value estamos fazendo a verificação do valor atribuido ao in
 
 1- Este evento serve para disparar alguma coisa no caso do programa do topico anterior, ele dispara a function verifica, ou seja, ao clicar no botão no mundo HTML ele dispara este evento dentro do mundo JS e assim refletindo no HTML novamente, muito usado para enviar formularios para o backend e esse tipo de verificação e atribuição.
 
+2- Precisamos ficar atento ao seguinte, ao atribuir uma function no onclick, devemos apenar chamar a function e não executa-la, sendo assim, tiramos o () no final da function;
+
+button.onclick = verifica(); // ERRADO, na verdade eu não sei se usamos assim em alguma situação, porém nos exemplo que vi no curso, não.
+
+button.onclick = verifica; //CORRETO
+
 ## Exercicios da Alura:
 
 1- Matematica:
